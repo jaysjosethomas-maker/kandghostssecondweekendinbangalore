@@ -1271,45 +1271,41 @@
     <section class="slide flex-col items-center justify-center max-w-3xl mx-auto py-6 text-left font-mono" data-scene="night-sky">
       <div class="glass-card p-6 sm:p-8 rounded-3xl w-full border border-cyan-500/50 shadow-2xl relative overflow-hidden">
         
-        <!-- Shooting Stars Ambient Layer -->
-        <div class="absolute inset-0 z-0 opacity-45 pointer-events-none mix-blend-screen overflow-hidden">
-          <img src="assets/shooting-stars.gif" alt="Night Sky Atmosphere" class="w-full h-full object-cover filter brightness-125 contrast-125">
-          <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/65 to-transparent"></div>
+        <div class="flex items-center justify-between mb-3 border-b border-slate-700/80 pb-2.5">
+          <div>
+            <span class="text-[11px] text-accent-cyan uppercase tracking-widest font-bold">MIDNIGHT ATMOSPHERE // THE NIGHT SKY</span>
+            <h2 class="font-display text-2xl sm:text-3xl font-black text-white">Night at the Secret Location</h2>
+          </div>
+          <i data-lucide="moon" class="w-6 h-6 text-accent-cyan animate-pulse"></i>
         </div>
 
-        <!-- Foreground Content Layer -->
-        <div class="relative z-10">
-          <div class="flex items-center justify-between mb-3 border-b border-slate-700/80 pb-2.5">
-            <div>
-              <span class="text-[11px] text-accent-cyan uppercase tracking-widest font-bold">MIDNIGHT ATMOSPHERE // THE NIGHT SKY</span>
-              <h2 class="font-display text-2xl sm:text-3xl font-black text-white">Night at the Secret Location</h2>
-            </div>
-            <i data-lucide="moon" class="w-6 h-6 text-accent-cyan animate-pulse"></i>
-          </div>
-
-          <!-- Poetic Atmosphere Callout -->
-          <div class="p-4 sm:p-5 rounded-2xl bg-navy-950/85 border border-cyan-500/40 mb-4 text-center backdrop-blur-sm">
-            <p class="font-display text-lg sm:text-2xl font-bold text-cyan-200 mb-1">
-              “And then… look up.”
-            </p>
-            <p class="text-xs sm:text-sm text-slate-300 italic font-sans">
-              A night with a sky worth staying awake for.<br>
-              <span class="text-slate-400 text-xs">Some nights are better when you stop looking at the clock.</span>
-            </p>
-          </div>
-
-          <!-- Experience Details -->
-          <div class="bg-navy-950/85 p-5 rounded-2xl border border-slate-800 font-sans text-xs sm:text-sm text-slate-200 leading-relaxed space-y-2.5 mb-6 backdrop-blur-sm">
-            <p>• Go for a night walk in this famous place. Explore the lesser-known, hidden permitted spots under the night sky.</p>
-            <p>• K and Ghost have to ensure that they wear fully covered dress and shoes for the night.</p>
-            <p>• Spend quiet time watching the vast open sky away from the city lights.</p>
-            <p class="text-slate-400 italic">• Rest a little before dawn...</p>
-          </div>
-
-          <button onclick="nextSlideWithTransition('Sunrise standby...')" class="w-full py-3.5 rounded-xl bg-accent-blue hover:bg-blue-600 text-white font-bold text-xs uppercase tracking-wider transition-all font-mono">
-            Rest a little → Wake Up Early for the Sunrise
-          </button>
+        <!-- Shooting Stars GIF Container -->
+        <div class="relative w-full max-h-56 sm:max-h-64 rounded-2xl overflow-hidden mb-4 border border-cyan-500/60 bg-navy-950 flex items-center justify-center shadow-2xl">
+          <img src="assets/shooting-stars.gif" alt="Shooting Stars Night Sky" class="max-h-52 sm:max-h-60 w-auto object-contain rounded-xl" loading="lazy">
         </div>
+
+        <!-- Poetic Atmosphere Callout -->
+        <div class="p-4 sm:p-5 rounded-2xl bg-navy-950/85 border border-cyan-500/40 mb-4 text-center backdrop-blur-sm">
+          <p class="font-display text-lg sm:text-2xl font-bold text-cyan-200 mb-1">
+            “And then… look up.”
+          </p>
+          <p class="text-xs sm:text-sm text-slate-300 italic font-sans">
+            A night with a sky worth staying awake for.<br>
+            <span class="text-slate-400 text-xs">Some nights are better when you stop looking at the clock.</span>
+          </p>
+        </div>
+
+        <!-- Experience Details -->
+        <div class="bg-navy-950/85 p-5 rounded-2xl border border-slate-800 font-sans text-xs sm:text-sm text-slate-200 leading-relaxed space-y-2.5 mb-6 backdrop-blur-sm">
+          <p>• Go for a night walk in this famous place. Explore the lesser-known, hidden permitted spots under the night sky.</p>
+          <p>• K and Ghost have to ensure that they wear fully covered dress and shoes for the night.</p>
+          <p>• Spend quiet time watching the vast open sky away from the city lights.</p>
+          <p class="text-slate-400 italic">• Rest a little before dawn...</p>
+        </div>
+
+        <button onclick="nextSlideWithTransition('Sunrise standby...')" class="w-full py-3.5 rounded-xl bg-accent-blue hover:bg-blue-600 text-white font-bold text-xs uppercase tracking-wider transition-all font-mono">
+          Rest a little → Wake Up Early for the Sunrise
+        </button>
 
       </div>
     </section>
@@ -1507,42 +1503,117 @@
 
     <!-- SLIDE 27: DECK 27 / THE FINAL QUESTION (Scene: clean) -->
     <section class="slide flex-col items-center justify-center max-w-2xl mx-auto py-8 text-center relative overflow-hidden" id="finalDecisionSlide" data-scene="clean">
-      <div class="glass-card p-8 sm:p-12 rounded-3xl w-full border border-accent-cyan/50 shadow-2xl relative">
+      <div class="glass-card p-6 sm:p-10 rounded-3xl w-full border border-accent-cyan/50 shadow-2xl relative">
         <span class="text-xs font-semibold uppercase tracking-widest text-accent-cyan mb-2 block font-mono">THE FINAL CLEARANCE CHECKPOINT</span>
         
-        <h2 class="font-display text-3xl sm:text-5xl font-black text-white mb-4 tracking-tight leading-tight">
+        <h2 class="font-display text-2xl sm:text-4xl font-black text-white mb-3 tracking-tight leading-tight">
           “Madam, are you in for Weekend 02?”
         </h2>
 
-        <!-- Anticipation Prompt -->
-        <div class="bg-navy-950/80 p-4 rounded-2xl border border-amber-500/40 my-4 max-w-md mx-auto">
-          <p class="text-xs sm:text-sm text-slate-300 font-sans leading-relaxed">
-            You've reached the final clearance checkpoint. One answer remains.
+        <!-- Specific Timeline Clarification -->
+        <div class="bg-navy-950/85 p-4 sm:p-5 rounded-2xl border border-amber-500/40 my-3 text-left">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-amber-400 font-mono font-bold text-xs uppercase tracking-wider flex items-center gap-1.5">
+              <i data-lucide="calendar" class="w-4 h-4 text-amber-400"></i> MISSION TIMELINE WINDOW
+            </span>
+            <span class="text-[10px] px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 font-mono font-bold border border-amber-500/30">OCTOBER 23RD – 25TH</span>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-200 font-sans leading-relaxed">
+            This specific plan is uniquely timed and can <strong>only work for the weekend of October 23rd to 25th</strong>. Certain parts of the itinerary can adapt to another weekend, but the stars and special events align specifically for these dates.
           </p>
-          <p class="text-xs font-mono font-bold text-amber-400 mt-1 uppercase tracking-wider">
-            ✨ Answer to reveal a final surprise. ✨
+          <p class="text-xs font-mono font-bold text-accent-cyan mt-2">
+            ✨ Select your protocol clearance below:
           </p>
         </div>
 
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mt-4 font-mono">
-          <!-- YES Button -->
-          <button id="yesBtn" onclick="handleDecisionChoice('YES')" onmouseenter="onHoverYes()" onmouseleave="onLeaveYes()" class="btn-yes-protocol relative px-8 sm:px-10 py-4 sm:py-5 rounded-2xl bg-gradient-to-r from-accent-blue to-accent-cyan text-white font-extrabold text-lg sm:text-xl shadow-xl border border-white/20">
-            <span class="flex items-center space-x-2">
-              <span>YES — LET’S DO THIS</span>
-              <span id="yesEmoji" class="text-2xl">🚀</span>
-            </span>
+        <!-- 5 Interactive Decision Options -->
+        <div class="flex flex-col gap-2.5 mt-4 font-mono text-left">
+          
+          <!-- Option 1: Yes for Oct 23rd -->
+          <button onclick="handleDecisionChoice('Yes for Oct 23rd')" onmouseenter="onHoverDecision('Oct 23rd locked in! Full Ghost protocol ready.')" onmouseleave="onLeaveDecision()" class="decision-btn group p-3.5 sm:p-4 rounded-2xl bg-gradient-to-r from-accent-blue/30 via-navy-900 to-accent-cyan/25 border border-accent-cyan hover:border-white transition-all shadow-lg hover:shadow-cyan-500/20 hover:scale-[1.01]">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-3">
+                <span class="text-2xl group-hover:scale-110 transition-transform">🚀</span>
+                <div>
+                  <div class="text-white font-extrabold text-sm sm:text-base font-mono flex items-center gap-2">
+                    <span>Yes for Oct 23rd</span>
+                    <span class="text-[10px] bg-accent-blue px-2 py-0.5 rounded-full text-white font-bold tracking-wider uppercase">Optimal</span>
+                  </div>
+                  <p class="text-slate-300 text-xs font-sans mt-0.5">Locks in Oct 23rd – 25th. Full masterplan activated!</p>
+                </div>
+              </div>
+              <i data-lucide="chevron-right" class="w-5 h-5 text-accent-cyan group-hover:translate-x-1 transition-transform"></i>
+            </div>
           </button>
 
-          <!-- NO Button -->
-          <button id="noBtn" onclick="handleDecisionChoice('NO')" onmouseenter="onHoverNo()" onmouseleave="onLeaveNo()" class="btn-no-protocol relative px-8 sm:px-10 py-4 sm:py-5 rounded-2xl bg-slate-800 text-slate-300 font-bold text-base sm:text-lg border border-slate-700">
-            <span class="flex items-center space-x-2">
-              <span>NO</span>
-              <span id="noEmoji" class="text-xl">🥺</span>
-            </span>
+          <!-- Option 2: Yes for the plan, but maybe another time -->
+          <button onclick="handleDecisionChoice('Yes for the plan, but maybe another time')" onmouseenter="onHoverDecision('Plan locked! We will find dates that work perfectly.')" onmouseleave="onLeaveDecision()" class="decision-btn group p-3.5 sm:p-4 rounded-2xl bg-navy-950/90 border border-amber-500/40 hover:border-amber-400 transition-all shadow-md hover:scale-[1.01]">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-3">
+                <span class="text-2xl group-hover:scale-110 transition-transform">🗓️</span>
+                <div>
+                  <div class="text-amber-200 font-bold text-sm sm:text-base font-mono">
+                    Yes for the plan, but maybe another time
+                  </div>
+                  <p class="text-slate-300 text-xs font-sans mt-0.5">Loves the itinerary, but dates need to be shifted.</p>
+                </div>
+              </div>
+              <i data-lucide="chevron-right" class="w-5 h-5 text-amber-400 group-hover:translate-x-1 transition-transform"></i>
+            </div>
           </button>
+
+          <!-- Option 3: Yes to meet you, but not the plan -->
+          <button onclick="handleDecisionChoice('Yes to meet you, but not the plan')" onmouseenter="onHoverDecision('Meeting confirmed! The plan can be rewritten anytime.')" onmouseleave="onLeaveDecision()" class="decision-btn group p-3.5 sm:p-4 rounded-2xl bg-navy-950/90 border border-teal-500/40 hover:border-teal-400 transition-all shadow-md hover:scale-[1.01]">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-3">
+                <span class="text-2xl group-hover:scale-110 transition-transform">☕</span>
+                <div>
+                  <div class="text-teal-200 font-bold text-sm sm:text-base font-mono">
+                    Yes to meet you, but not the plan
+                  </div>
+                  <p class="text-slate-300 text-xs font-sans mt-0.5">Wants to hang out and chill, but we'll do different activities.</p>
+                </div>
+              </div>
+              <i data-lucide="chevron-right" class="w-5 h-5 text-teal-400 group-hover:translate-x-1 transition-transform"></i>
+            </div>
+          </button>
+
+          <!-- Option 4: No, but another time -->
+          <button onclick="handleDecisionChoice('No, but another time')" onmouseenter="onHoverDecision('Rain check saved with zero pressure 🥺')" onmouseleave="onLeaveDecision()" class="decision-btn group p-3.5 sm:p-4 rounded-2xl bg-navy-950/90 border border-slate-700 hover:border-slate-500 transition-all shadow-md hover:scale-[1.01]">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-3">
+                <span class="text-2xl group-hover:scale-110 transition-transform">🥺</span>
+                <div>
+                  <div class="text-slate-200 font-bold text-sm sm:text-base font-mono">
+                    No, but another time
+                  </div>
+                  <p class="text-slate-400 text-xs font-sans mt-0.5">Can't make this one, but open for the future.</p>
+                </div>
+              </div>
+              <i data-lucide="chevron-right" class="w-5 h-5 text-slate-400 group-hover:translate-x-1 transition-transform"></i>
+            </div>
+          </button>
+
+          <!-- Option 5: No, don't want to meet you -->
+          <button onclick="handleDecisionChoice('No, don\'t want to meet you')" onmouseenter="onHoverDecision('Warning: Ghost cardiac flatline imminent! 💀')" onmouseleave="onLeaveDecision()" class="decision-btn group p-3.5 sm:p-4 rounded-2xl bg-rose-950/30 border border-rose-900/60 hover:border-rose-500/80 transition-all shadow-md hover:scale-[1.01]">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-3">
+                <span class="text-2xl group-hover:scale-110 transition-transform">💔</span>
+                <div>
+                  <div class="text-rose-300 font-bold text-sm sm:text-base font-mono flex items-center gap-1.5 flex-wrap">
+                    <span>No, don't want to meet you</span>
+                    <span class="text-[10px] bg-rose-900/80 border border-rose-700/60 px-2 py-0.5 rounded text-rose-200 font-sans italic">Ghost getting a heart attack 💀</span>
+                  </div>
+                  <p class="text-slate-400 text-xs font-sans mt-0.5">Emergency cardiac flatline protocol initiated.</p>
+                </div>
+              </div>
+              <i data-lucide="activity" class="w-5 h-5 text-rose-400 animate-pulse"></i>
+            </div>
+          </button>
+
         </div>
 
-        <p id="decisionHoverText" class="text-xs text-slate-400 mt-6 min-h-[20px] italic font-mono"></p>
+        <p id="decisionHoverText" class="text-xs text-slate-400 mt-4 min-h-[18px] italic font-mono text-center"></p>
       </div>
     </section>
 
@@ -1648,38 +1719,108 @@
 
   </main>
 
-  <!-- RESULT MODAL FOR DECISION NO: RESPECTFUL "Okay 🥺" WITH CTA -->
-  <div id="decisionNoModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-navy-950/90 backdrop-blur-xl hidden">
-    <div class="glass-card p-8 md:p-12 rounded-3xl max-w-sm w-full text-center relative border border-slate-700 shadow-2xl font-mono">
-      <h1 class="font-display text-4xl sm:text-5xl font-black text-white mb-4">Okay 🥺</h1>
-      <p class="text-xs text-slate-400 font-sans mb-6">Ghost completely respects your decision. Zero pressure.</p>
-      
+  <!-- DECISION MODAL 1: YES FOR OCT 23RD -->
+  <div id="decisionYesOct23Modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-navy-950/90 backdrop-blur-xl hidden">
+    <div class="glass-card p-8 md:p-12 rounded-3xl max-w-lg w-full text-center relative border border-accent-cyan/60 shadow-2xl font-mono">
+      <div class="text-6xl mb-4 animate-bounce">🎉🚀🥂</div>
+      <span class="text-xs font-bold font-mono px-3 py-1 rounded-full bg-accent-blue/30 text-accent-cyan border border-accent-cyan/40 uppercase">DATES LOCKED: OCT 23 – 25</span>
+      <h2 class="font-display text-3xl font-black text-white mt-3 mb-2">GHOST PROTOCOL ACTIVATED!</h2>
+      <p class="text-accent-cyan font-bold text-sm mb-4">Survival kit secured. Zero South Indian food mode engaged.</p>
+      <div class="bg-navy-950/80 p-4 rounded-xl border border-slate-800 mb-6 text-xs text-slate-200 font-sans leading-relaxed">
+        Ghost will see you in Bangalore for October 23rd to 25th! Preparing the classified weekend clearance sequence...
+      </div>
+      <button onclick="startCinematicThemeDecryption()" class="w-full px-8 py-3.5 rounded-full bg-gradient-to-r from-accent-blue to-accent-cyan text-white font-bold text-xs uppercase tracking-wider font-mono shadow-xl hover:scale-105 transition-all">
+        PROCEED TO MISSION VAULT &amp; DECRYPTION →
+      </button>
+    </div>
+  </div>
+
+  <!-- DECISION MODAL 2: YES FOR THE PLAN, BUT MAYBE ANOTHER TIME -->
+  <div id="decisionPlanLaterModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-navy-950/90 backdrop-blur-xl hidden">
+    <div class="glass-card p-8 md:p-12 rounded-3xl max-w-lg w-full text-center relative border border-amber-500/60 shadow-2xl font-mono">
+      <div class="text-6xl mb-4 animate-bounce">🗓️✨🥳</div>
+      <span class="text-xs font-bold font-mono px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/40 uppercase">PLAN APPROVED // DATE RECALIBRATION</span>
+      <h2 class="font-display text-3xl font-black text-white mt-3 mb-2">ITINERARY LOCKED!</h2>
+      <p class="text-amber-300 font-bold text-sm mb-4">Logistics standing by. Future calendar window reserved.</p>
+      <div class="bg-navy-950/80 p-4 rounded-xl border border-slate-800 mb-6 text-xs text-slate-200 font-sans leading-relaxed">
+        Ghost will keep all reservations and routes on standby for whenever your schedule opens up! In the meantime, you've earned full security clearance to access the classified mission vault.
+      </div>
+      <button onclick="startCinematicThemeDecryption()" class="w-full px-8 py-3.5 rounded-full bg-gradient-to-r from-amber-500 via-amber-600 to-amber-700 text-white font-bold text-xs uppercase tracking-wider font-mono shadow-xl hover:scale-105 transition-all">
+        PROCEED TO MISSION VAULT &amp; DECRYPTION →
+      </button>
+    </div>
+  </div>
+
+  <!-- DECISION MODAL 3: YES TO MEET YOU, BUT NOT THE PLAN -->
+  <div id="decisionMeetOnlyModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-navy-950/90 backdrop-blur-xl hidden">
+    <div class="glass-card p-8 md:p-12 rounded-3xl max-w-lg w-full text-center relative border border-teal-500/60 shadow-2xl font-mono">
+      <div class="text-6xl mb-4 animate-bounce">☕✨🤝</div>
+      <span class="text-xs font-bold font-mono px-3 py-1 rounded-full bg-teal-500/20 text-teal-300 border border-teal-500/40 uppercase">CHILL PROTOCOL // CUSTOM AGENDA</span>
+      <h2 class="font-display text-3xl font-black text-white mt-3 mb-2">MEETING CONFIRMED!</h2>
+      <p class="text-teal-300 font-bold text-sm mb-4">Plans can be rewritten anytime — hanging out is what counts.</p>
+      <div class="bg-navy-950/80 p-4 rounded-xl border border-slate-800 mb-6 text-xs text-slate-200 font-sans leading-relaxed">
+        Ghost will gladly scrap the complex itinerary and customize something 100% relaxed around what K wants. You still have full authorization to view the classified mystery terminal!
+      </div>
+      <button onclick="startCinematicThemeDecryption()" class="w-full px-8 py-3.5 rounded-full bg-gradient-to-r from-teal-500 via-teal-600 to-teal-700 text-white font-bold text-xs uppercase tracking-wider font-mono shadow-xl hover:scale-105 transition-all">
+        PROCEED TO MISSION VAULT &amp; DECRYPTION →
+      </button>
+    </div>
+  </div>
+
+  <!-- DECISION MODAL 4: NO, BUT ANOTHER TIME -->
+  <div id="decisionNoLaterModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-navy-950/90 backdrop-blur-xl hidden">
+    <div class="glass-card p-8 md:p-12 rounded-3xl max-w-md w-full text-center relative border border-slate-700 shadow-2xl font-mono">
+      <div class="text-5xl mb-4">🥺🗓️</div>
+      <h1 class="font-display text-3xl sm:text-4xl font-black text-white mb-2">Understood Completely</h1>
+      <p class="text-xs text-slate-300 font-sans mb-4">Rain check banked with 100% warmth and zero pressure.</p>
+      <div class="bg-navy-950/80 p-4 rounded-xl border border-slate-800 mb-6 text-xs text-slate-400 font-sans leading-relaxed">
+        Ghost respects your schedule and personal bandwidth completely. Zero expectations, zero guilt. We'll align whenever the timing is right!
+      </div>
       <div class="flex flex-col gap-2">
-        <button onclick="closeDecisionNoModal()" class="w-full py-3 rounded-full bg-accent-blue hover:bg-blue-600 text-white font-bold text-xs uppercase tracking-wider font-mono">
-          Return to the dossier →
+        <button onclick="closeDecisionModal('decisionNoLaterModal')" class="w-full py-3 rounded-full bg-accent-blue hover:bg-blue-600 text-white font-bold text-xs uppercase tracking-wider font-mono">
+          Return to the dossier 📖
         </button>
-        <button onclick="closeDecisionNoModalAndGoHome()" class="w-full py-2.5 rounded-full bg-navy-800 hover:bg-slate-700 text-slate-300 font-mono text-xs">
+        <button onclick="closeDecisionModalAndGoHome('decisionNoLaterModal')" class="w-full py-2.5 rounded-full bg-navy-800 hover:bg-slate-700 text-slate-300 font-mono text-xs">
           Back to the beginning 🔄
         </button>
       </div>
     </div>
   </div>
 
-  <!-- RESULT MODAL FOR DECISION YES: PLAYFUL CELEBRATION -->
-  <div id="decisionYesModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-navy-950/90 backdrop-blur-xl hidden">
-    <div class="glass-card p-8 md:p-12 rounded-3xl max-w-lg w-full text-center relative border border-accent-cyan/50 shadow-2xl font-mono">
-      <div class="text-6xl mb-4 animate-bounce">🎉🚀🥂</div>
-      <h2 class="font-display text-3xl font-black text-white mb-2">GHOST PROTOCOL ACTIVATED!</h2>
-      <p class="text-accent-cyan font-bold text-sm mb-4">Survival kit secured. Zero South Indian food mode engaged.</p>
-      <div class="bg-navy-950/80 p-4 rounded-xl border border-slate-800 mb-6 text-xs text-slate-200 font-sans">
-        Ghost will see you in Bangalore! Preparing the classified weekend clearance sequence...
+  <!-- DECISION MODAL 5: NO, DON'T WANT TO MEET YOU (GHOST CARDIAC ARREST JOKE) -->
+  <div id="decisionHeartAttackModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-navy-950/95 backdrop-blur-xl hidden">
+    <div class="glass-card p-6 sm:p-10 rounded-3xl max-w-lg w-full text-center relative border border-rose-600/70 shadow-2xl font-mono">
+      <div class="text-6xl mb-3 animate-pulse">💀🫀⚡</div>
+      <span class="text-[11px] font-bold font-mono px-3 py-1 rounded-full bg-rose-950 border border-rose-500/50 text-rose-300 uppercase tracking-widest animate-bounce inline-block mb-2">
+        CRITICAL MEDICAL ALERT
+      </span>
+      <h2 class="font-display text-2xl sm:text-3xl font-black text-white mb-1">
+        BEEP... BEEP... BEEEEEEEP! ⚡
+      </h2>
+      <p class="text-rose-400 font-bold text-xs font-mono uppercase tracking-wider mb-4">
+        Ghost has suffered a dramatic cardiac flatline!
+      </p>
+      
+      <div class="bg-navy-950/90 p-4 rounded-xl border border-rose-900/80 mb-5 text-xs text-slate-300 font-sans leading-relaxed text-left space-y-2">
+        <p>🚑 <strong>Emergency Response:</strong> Medics rushed to Ghost's coordinates. Defibrillators charged to 200 Joules... <em>CLEAR! ⚡</em></p>
+        <p>🥔 <strong>Status:</strong> Vitals stabilized, but Ghost's dramatic ego has flatlined into a mashed potato.</p>
+        <p class="text-slate-400 italic text-[11px]">Jokes aside: Ghost completely respects your boundaries with genuine warmth and absolute grace. Zero hard feelings, madam!</p>
       </div>
-      <!-- FIXED: Seamlessly navigates forward to Slide 27 (Theme Decryption) -->
-      <button onclick="startCinematicThemeDecryption()" class="px-8 py-3.5 rounded-full bg-gradient-to-r from-accent-blue to-accent-cyan text-white font-bold text-xs uppercase tracking-wider font-mono shadow-xl">
-        PROCEED TO MISSION VAULT &amp; DECRYPTION →
-      </button>
+
+      <div class="flex flex-col sm:flex-row gap-2.5 font-mono">
+        <button onclick="closeDecisionModal('decisionHeartAttackModal')" class="flex-1 py-3 px-4 rounded-full bg-rose-600 hover:bg-rose-500 text-white font-bold text-xs uppercase tracking-wider transition-all shadow-lg">
+          Give Ghost CPR / Reconsider 🩺
+        </button>
+        <button onclick="closeDecisionModalAndGoHome('decisionHeartAttackModal')" class="flex-1 py-3 px-4 rounded-full bg-navy-800 hover:bg-slate-700 text-slate-300 font-bold text-xs uppercase tracking-wider transition-all">
+          Leave Ghost as a potato 🥔
+        </button>
+      </div>
     </div>
   </div>
+
+  <!-- Fallback Legacy Modals for backwards safety -->
+  <div id="decisionNoModal" class="hidden"></div>
+  <div id="decisionYesModal" class="hidden"></div>
 
   <!-- HIDDEN DOM ELEMENT FOR INSPECT ELEMENT -->
   <div id="secret-note-kriti-shivhare" style="display:none; color: #000000;" data-author="Ghost" data-note="A Letter to Kriti Shivhare">
@@ -1943,18 +2084,65 @@
 
     function onLeaveYes() {
       document.getElementById('decisionHoverText').innerText = "";
-      document.getElementById('yesEmoji').innerText = "🚀";
+      const el = document.getElementById('yesEmoji');
+      if (el) el.innerText = "🚀";
     }
 
     function onHoverNo() {
       document.getElementById('decisionHoverText').innerText = "Status: Potato reaction detected 🥔";
-      document.getElementById('noEmoji').innerText = "🥺";
+      const el = document.getElementById('noEmoji');
+      if (el) el.innerText = "🥺";
       playChimeSound(329.63, 'sine');
     }
 
     function onLeaveNo() {
       document.getElementById('decisionHoverText').innerText = "";
-      document.getElementById('noEmoji').innerText = "🥺";
+      const el = document.getElementById('noEmoji');
+      if (el) el.innerText = "🥺";
+    }
+
+    // Dynamic Hover for all 5 Clearance Options
+    function onHoverDecision(text) {
+      const el = document.getElementById('decisionHoverText');
+      if (el) el.innerText = text;
+      playChimeSound(520, 'sine');
+    }
+
+    function onLeaveDecision() {
+      const el = document.getElementById('decisionHoverText');
+      if (el) el.innerText = "";
+    }
+
+    // Cardiac Flatline Comedic Audio Generator
+    function playHeartAttackSound() {
+      try {
+        if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        const now = audioCtx.currentTime;
+        // Two quick heart monitor beeps
+        [0, 0.28].forEach(delay => {
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(880, now + delay);
+          gain.gain.setValueAtTime(0.12, now + delay);
+          gain.gain.exponentialRampToValueAtTime(0.0001, now + delay + 0.12);
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
+          osc.start(now + delay);
+          osc.stop(now + delay + 0.12);
+        });
+        // Dramatic flatline tone
+        const flatlineOsc = audioCtx.createOscillator();
+        const flatlineGain = audioCtx.createGain();
+        flatlineOsc.type = 'sawtooth';
+        flatlineOsc.frequency.setValueAtTime(440, now + 0.6);
+        flatlineGain.gain.setValueAtTime(0.08, now + 0.6);
+        flatlineGain.gain.exponentialRampToValueAtTime(0.0001, now + 2.0);
+        flatlineOsc.connect(flatlineGain);
+        flatlineGain.connect(audioCtx.destination);
+        flatlineOsc.start(now + 0.6);
+        flatlineOsc.stop(now + 2.0);
+      } catch(e) {}
     }
 
     // Web3Forms background email notification
@@ -1966,12 +2154,9 @@
       lastSentChoice = choice;
       lastSentTimestamp = now;
 
-      const isYes = (choice === 'YES');
-      const subject = isYes ? '🚨 Weekend 02 Response: YES' : '🚨 Weekend 02 Response: NO';
       const currentTime = new Date().toLocaleString();
-      const message = isYes
-        ? `K has chosen YES 🥹\n\nWebsite: KandGhostsweekendsinBangalore.com\nResponse: YES\nTime: ${currentTime}`
-        : `K has chosen NO 🥺\n\nWebsite: KandGhostsweekendsinBangalore.com\nResponse: NO\nTime: ${currentTime}`;
+      const subject = `🚨 Weekend 02 Response: ${choice}`;
+      const message = `K has responded to the Weekend 02 clearance:\n\nChoice Selected: ${choice}\nTimestamp: ${currentTime}\nWebsite: KandGhostsweekendsinBangalore.com`;
 
       fetch('https://api.web3forms.com/submit', {
         method: 'POST',
@@ -2001,23 +2186,51 @@
     function handleDecisionChoice(choice) {
       sendDecisionNotification(choice);
 
-      if (choice === 'YES') {
+      if (choice === 'Yes for Oct 23rd' || choice === 'YES') {
         confetti({ particleCount: 150, spread: 100 });
-        document.getElementById('decisionYesModal').classList.remove('hidden');
+        const modal = document.getElementById('decisionYesOct23Modal') || document.getElementById('decisionYesModal');
+        if (modal) modal.classList.remove('hidden');
         playChimeSound(659.25, 'triangle');
-      } else {
-        document.getElementById('decisionNoModal').classList.remove('hidden');
+      } else if (choice === 'Yes for the plan, but maybe another time') {
+        confetti({ particleCount: 100, spread: 80 });
+        const modal = document.getElementById('decisionPlanLaterModal') || document.getElementById('decisionYesModal');
+        if (modal) modal.classList.remove('hidden');
+        playChimeSound(587.33, 'triangle');
+      } else if (choice === 'Yes to meet you, but not the plan') {
+        confetti({ particleCount: 80, spread: 70 });
+        const modal = document.getElementById('decisionMeetOnlyModal') || document.getElementById('decisionYesModal');
+        if (modal) modal.classList.remove('hidden');
+        playChimeSound(523.25, 'triangle');
+      } else if (choice === 'No, but another time') {
+        const modal = document.getElementById('decisionNoLaterModal') || document.getElementById('decisionNoModal');
+        if (modal) modal.classList.remove('hidden');
         playChimeSound(350, 'sine');
+      } else if (choice === "No, don't want to meet you" || choice === 'NO') {
+        const modal = document.getElementById('decisionHeartAttackModal') || document.getElementById('decisionNoModal');
+        if (modal) modal.classList.remove('hidden');
+        playHeartAttackSound();
       }
     }
 
+    function closeDecisionModal(modalId) {
+      const el = document.getElementById(modalId);
+      if (el) el.classList.add('hidden');
+    }
+
+    function closeDecisionModalAndGoHome(modalId) {
+      const el = document.getElementById(modalId);
+      if (el) el.classList.add('hidden');
+      navigateToSlide(0, 'Returning to start...');
+    }
+
     function closeDecisionNoModal() {
-      document.getElementById('decisionNoModal').classList.add('hidden');
+      closeDecisionModal('decisionNoLaterModal');
+      closeDecisionModal('decisionHeartAttackModal');
+      closeDecisionModal('decisionNoModal');
     }
 
     function closeDecisionNoModalAndGoHome() {
-      document.getElementById('decisionNoModal').classList.add('hidden');
-      navigateToSlide(0, 'Returning to start...');
+      closeDecisionModalAndGoHome('decisionNoLaterModal');
     }
 
     function triggerEarlyThemeTemptation() {
@@ -2129,8 +2342,37 @@
       alpha: 0.2 + Math.random() * 0.4
     }));
 
+    // Dynamic Shooting Stars State Pool (Exclusively for 'night-sky')
+    let shootingStars = [];
+    let lastShootingStarTime = 0;
+
+    function createShootingStar() {
+      const startX = Math.random() * (width * 0.95);
+      const startY = Math.random() * (height * 0.45);
+      const angle = (Math.PI / 4) + ((Math.random() - 0.5) * 0.25);
+      const speed = 12 + Math.random() * 8;
+      const length = 110 + Math.random() * 120;
+      shootingStars.push({
+        x: startX,
+        y: startY,
+        dx: Math.cos(angle) * speed,
+        dy: Math.sin(angle) * speed,
+        length: length,
+        cos: Math.cos(angle),
+        sin: Math.sin(angle),
+        alpha: 1.0,
+        decay: 0.012 + Math.random() * 0.01
+      });
+    }
+
     function setScene(sceneName) {
       currentScene = sceneName;
+      if (sceneName === 'night-sky') {
+        createShootingStar();
+        lastShootingStarTime = Date.now();
+      } else {
+        if (shootingStars.length > 0) shootingStars = [];
+      }
     }
 
     function renderScene() {
@@ -2145,15 +2387,57 @@
           ctx.fillStyle = currentScene === 'night-sky' ? `rgba(186, 230, 253, ${Math.abs(s.alpha)})` : `rgba(224, 234, 252, ${Math.abs(s.alpha)})`;
           ctx.fill();
         });
-      } else if (false) {
-        stars.forEach(s => {
-          s.alpha += s.speed;
-          if (s.alpha > 1 || s.alpha < 0) s.speed = -s.speed;
-          ctx.beginPath();
-          ctx.arc(s.x, s.y, s.radius, 0, Math.PI * 2);
-          ctx.fillStyle = `rgba(224, 234, 252, ${Math.abs(s.alpha)})`;
-          ctx.fill();
-        });
+
+        // Dynamic Shooting Stars Background Effect (Contextually bound to night-sky)
+        if (currentScene === 'night-sky') {
+          const now = Date.now();
+          if (now - lastShootingStarTime > 1200 + Math.random() * 1400) {
+            createShootingStar();
+            lastShootingStarTime = now;
+          }
+
+          for (let i = shootingStars.length - 1; i >= 0; i--) {
+            const ss = shootingStars[i];
+            ss.x += ss.dx;
+            ss.y += ss.dy;
+            ss.alpha -= ss.decay;
+
+            if (ss.alpha <= 0 || ss.x > width + 250 || ss.y > height + 250) {
+              shootingStars.splice(i, 1);
+              continue;
+            }
+
+            const tailX = ss.x - (ss.cos * ss.length);
+            const tailY = ss.y - (ss.sin * ss.length);
+
+            const grad = ctx.createLinearGradient(tailX, tailY, ss.x, ss.y);
+            grad.addColorStop(0, 'rgba(56, 189, 248, 0)');
+            grad.addColorStop(0.65, `rgba(186, 230, 253, ${ss.alpha * 0.6})`);
+            grad.addColorStop(1, `rgba(255, 255, 255, ${ss.alpha})`);
+
+            ctx.beginPath();
+            ctx.moveTo(tailX, tailY);
+            ctx.lineTo(ss.x, ss.y);
+            ctx.strokeStyle = grad;
+            ctx.lineWidth = 2.4;
+            ctx.lineCap = 'round';
+            ctx.stroke();
+
+            // Bright glowing star head
+            ctx.beginPath();
+            ctx.arc(ss.x, ss.y, 2.0, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(255, 255, 255, ${ss.alpha})`;
+            ctx.shadowColor = '#38bdf8';
+            ctx.shadowBlur = 10;
+            ctx.fill();
+            ctx.shadowBlur = 0;
+          }
+        } else {
+          if (shootingStars.length > 0) shootingStars = [];
+        }
+      } else {
+        if (shootingStars.length > 0) shootingStars = [];
+      }
       } else if (currentScene === 'snow') {
         ctx.fillStyle = 'rgba(255, 255, 255, 0.85)';
         snowFlakes.forEach(f => {
@@ -2296,9 +2580,12 @@
 
     // Launch Cinematic Theme Decryption
     function startCinematicThemeDecryption() {
-      document.getElementById('decisionYesModal').classList.add('hidden');
+      ['decisionYesModal', 'decisionYesOct23Modal', 'decisionPlanLaterModal', 'decisionMeetOnlyModal'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.classList.add('hidden');
+      });
       
-      // Slide 27 is the dedicated Decryption & Theme Reveal Slide
+      // The dedicated Decryption & Theme Reveal Slide is the final slide
       const finalSlideIdx = document.querySelectorAll(".slide").length - 1;
       navigateToSlide(finalSlideIdx, "Decrypting central weekend pattern...");
 
